@@ -1,0 +1,41 @@
+PROCEDURE sort(var tab:array)
+VAR
+    i : INTEGER;
+    j : INTEGER :=2; 
+    k : INTEGER; 
+BEGIN
+
+WHILE (j<=tab.length) DO
+    i:=j-1;
+    k:=tab[j];
+    WHILE (i>0 and tab[i]>k) DO
+        t[i+1]:=t[i];
+        i:=i-1;
+    END_WHILE
+END_WHILE 
+FOR i FROM 0 TO tab.length STEP 1  DO
+    write(tab[i]);
+END_FOR ;
+END
+
+
+ALGORITHM algorithm_name
+VAR
+    tab :array of INTEGER ;
+    n :INTEGER;
+BEGIN
+
+REPEAT 
+    write("enter table number of element");
+    read(n);
+UNTIL (n>0)
+
+FOR i FROM 0 TO n STEP 1  DO
+    REPEAT
+        write ("enter tanle value");
+        read (tab[i]);
+    UNTIL (tab[i]=Isinteger())
+    
+END_FOR
+sort(tab);
+END 
